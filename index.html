@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8">
+    <title>Змійка</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="star-container"></div>
+    <header>
+        <h2>Змійка</h2>
+        <span>Очки: <span id="score">0</span></span>
+        <span>Рекорд: <span id="highscore">0</span></span>
+        <label for="size">Розмір поля:</label>
+        <select id="size">
+            <option value="400">400x400</option>
+            <option value="600">600x600</option>
+            <option value="800">800x800</option>
+        </select>
+        <label for="skin">Скін:</label>
+        <select id="skin">
+            <option value="black">Чорний</option>
+            <option value="green">Зелений</option>
+            <option value="blue">Синій</option>
+            <option value="gradient">Градієнт</option>
+            <option value="dual">Два кольори</option>
+        </select>
+        <button id="start">Старт</button>
+    </header>
+    <main>
+        <canvas width="400" height="400"></canvas>
+    </main>
+    <script type="module" src="./main.js"></script>
+</body>
+</html>
